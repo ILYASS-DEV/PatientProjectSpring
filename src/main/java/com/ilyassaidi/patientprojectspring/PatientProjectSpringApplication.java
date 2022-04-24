@@ -15,7 +15,7 @@ public class PatientProjectSpringApplication {
     public static void main(String[] args) {
         SpringApplication.run(PatientProjectSpringApplication.class, args);
     }
-    @Bean
+   /* @Bean
     CommandLineRunner commandLineRunner(PatientRepository patientRepository){
         return args ->{
             patientRepository.save(new Patient(null,"Ilyass",new Date(),false,102));
@@ -26,6 +26,6 @@ public class PatientProjectSpringApplication {
                 System.out.println(p.getNom());
             });
 
-        };
-    }
+        };*/
+
 }
