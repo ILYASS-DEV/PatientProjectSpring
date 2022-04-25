@@ -5,7 +5,7 @@ AIDI ILYASS - 4IIR-G4
 It's developed using Intellij IDE
 
 •	To generate the UI, I used Thymeleaf template engine.
-In my HTML files we used HTML5 and bootstrap.
+     o  In the HTML files we used HTML5 and bootstrap.
 
 •	In the database we were based on MySQL as a database back-end.
 •	We used Spring Data to get access to our database as a JPA implementation.
