@@ -7,7 +7,7 @@ It's developed using Intellij IDE
 •	To generate the UI, I used Thymeleaf template engine.
 •    In the HTML files we used HTML5 and bootstrap.
 
-•	In the database we were based on MySQL as a database back-end.
+•	In the database we were based on MySQL as a database back-end.<br />
 •	We used Spring Data to get access to our database as a JPA implementation.
 
 •	We implemented error handling and data validation to avoid crashes when invalid data is entered (both client-side and server-side).
