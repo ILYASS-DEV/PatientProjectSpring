@@ -13,8 +13,8 @@ It's developed using Intellij IDE
 •	We implemented error handling and data validation to avoid crashes when invalid data is entered (both client-side and server-side).
 
 •	We used Spring Security to manage users and roles.
-   •	Our registered users should have at least one of these roles: user and administrator.
-    •   Our Security Strategies : InMemoryAuthentication, JDBCAuthentication and UserDetailsService.
+•	Our registered users should have at least one of these roles: user and administrator.
+•  Our Security Strategies : InMemoryAuthentication, JDBCAuthentication and UserDetailsService.
     
 # Our interfaces
 # Login Page 
