@@ -10,8 +10,9 @@
 </head>
 <body>
 <div layout:fragment="content1" >
-    <div class="col-md-6 offset-3">
-        <form method="post" th:action="@{save(page=${page},keyword=${keyword})}">
+    <h3 style="text-align: center">Modifier un patient</h3>
+    <div class="col-md-6 offset-3 " >
+        <form method="post" th:action="@{/admin/save(page=${page},keyword=${keyword})}">
             <div >
                 <label >Id :</label>
                 <!--label th:text="${patient.id}">Id</label-->

@@ -20,7 +20,7 @@ import java.util.List;
 @AllArgsConstructor //ajoute constructeur avec param
 public class PatientController {
     private PatientRepository patientRepository;
-    @GetMapping(path = "/index") //requete getmapping envoie vers dispatcherservlet
+    @GetMapping(path = "/user/index") //requete getmapping envoie vers dispatcherservlet
     public String patients(Model model,
                            @RequestParam(name = "page",defaultValue = "0") int page,
                            @RequestParam(name="size",defaultValue = "5") int size,
@@ -34,37 +34,38 @@ public class PatientController {
 
     }
 
-    @GetMapping("/delete")
+    @GetMapping("/admin/delete")
     public String delete(Long id,int page,String keyword){
         patientRepository.deleteById(id);
-        return "redirect:/index?page="+page+"&keyword="+keyword;
+        return "redirect:/user/index?page="+page+"&keyword="+keyword;
     }
 
     @GetMapping("/")
     public String home(){
-        return "redirect:/index";
+
+        return "home";
     }
 
-    @GetMapping("/patients")
+    @GetMapping("/user/patients")
     @ResponseBody
     public List<Patient> listPatients(){
         return patientRepository.findAll();
     }
 
-    @GetMapping("/formPatient")
+    @GetMapping("/admin/formPatient")
     public String formPatient(Model model){
         model.addAttribute("patient", new Patient() );
         return "formPatient";
     }
 
-    @PostMapping(path="/save")
+    @PostMapping(path="/admin/save")
     public String save(Model model, @Valid Patient patient, BindingResult bindingResult,@RequestParam(defaultValue = "0")int page,@RequestParam(defaultValue = "") String keyword){
         if(bindingResult.hasErrors()) return "formPatient";
         patientRepository.save(patient);
-        return  "redirect:/index?page="+page+"&keyword="+keyword;
+        return  "redirect:/user/index?page="+page+"&keyword="+keyword;
     }
 
-    @GetMapping("/editPatient")
+    @GetMapping("/admin/editPatient")
     public String editPatient(Model model,Long id,String keyword, int page){
         Patient patient=patientRepository.findById(id).orElse((null));
         if (patient==null)
