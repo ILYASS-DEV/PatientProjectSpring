@@ -2,6 +2,7 @@ package com.ilyassaidi.patientprojectspring;
 
 import com.ilyassaidi.patientprojectspring.entities.Patient;
 import com.ilyassaidi.patientprojectspring.repositories.PatientRepository;
+import com.ilyassaidi.patientprojectspring.sec.services.SecurityService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -28,4 +29,23 @@ public class PatientProjectSpringApplication {
 
         };*/
 
-} 
+    /*@Bean
+    CommandLineRunner saveusers(SecurityService securityService) {
+        return args -> {
+            securityService.saveNewUser("ilyass2", "1234", "1234");
+            securityService.saveNewUser("youssef2", "1234", "1234");
+
+            securityService.saveNewRole("USER", "");
+            securityService.saveNewRole("ADMIN", "");
+
+            securityService.addRoleToUser("ilyass2", "USER");
+            securityService.addRoleToUser("ilyass2", "ADMIN");
+
+            securityService.addRoleToUser("youssef2", "USER");
+
+
+        };*/
+
+}
+
+
