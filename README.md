@@ -1,14 +1,14 @@
 # PatientProjectSpring
 AIDI ILYASS - 4IIR-G4
 
-•	This application is implemented using SPRING MVC framework.
-It's developed using Intellij IDE
+•	This application is implemented using SPRING MVC framework.<br />
+It's developed using Intellij IDE<br />
 
-•	To generate the UI, I used Thymeleaf template engine.
-•    In the HTML files we used HTML5 and bootstrap.
+•	To generate the UI, I used Thymeleaf template engine.<br />
+•    In the HTML files we used HTML5 and bootstrap.<br />
 
 •	In the database we were based on MySQL as a database back-end.<br />
-•	We used Spring Data to get access to our database as a JPA implementation.
+•	We used Spring Data to get access to our database as a JPA implementation.<br />
 
 •	We implemented error handling and data validation to avoid crashes when invalid data is entered (both client-side and server-side).
 
