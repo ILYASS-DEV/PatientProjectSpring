@@ -5,7 +5,7 @@ AIDI ILYASS - 4IIR-G4
 It's developed using Intellij IDE
 
 •	To generate the UI, I used Thymeleaf template engine.
-     o  In the HTML files we used HTML5 and bootstrap.
+•    In the HTML files we used HTML5 and bootstrap.
 
 •	In the database we were based on MySQL as a database back-end.
 •	We used Spring Data to get access to our database as a JPA implementation.
@@ -13,8 +13,8 @@ It's developed using Intellij IDE
 •	We implemented error handling and data validation to avoid crashes when invalid data is entered (both client-side and server-side).
 
 •	We used Spring Security to manage users and roles.
-    o	Our registered users should have at least one of these roles: user and administrator.
-    o   Our Security Strategies : InMemoryAuthentication, JDBCAuthentication and UserDetailsService.
+   •	Our registered users should have at least one of these roles: user and administrator.
+    •   Our Security Strategies : InMemoryAuthentication, JDBCAuthentication and UserDetailsService.
     
 # Our interfaces
 # Login Page 
